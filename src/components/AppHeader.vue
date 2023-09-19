@@ -1,6 +1,7 @@
 <script>
 
 export default {
+  
 };
 </script>
 
@@ -85,7 +86,15 @@ export default {
     
       height: 2.5rem;
     }
-    
+
+    .input-group::after {
+
+      content: '';
+      display: block;
+      border-right: 2px solid #f2f2f2;
+      margin-right: 1rem;
+
+    }
     .input-group>* {
       border: none;
       background-color: transparent;
@@ -94,6 +103,6 @@ export default {
     .icons-container {
       display: flex;
       gap: 1rem;
-}
+    }
 }
 </style>

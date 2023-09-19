@@ -1,21 +1,20 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
 
 export default {
-  data() {
-    return {
-      title: "Hello world"
-    }
-  }
-
-  // components: {
-  //   MyComponent,
-  // },
 };
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
+<section class="container-fluid">
+</section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+section{
+
+  height: 80vh;
+  border: 1px solid black;
+
+
+}
+</style>

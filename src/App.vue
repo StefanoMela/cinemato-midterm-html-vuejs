@@ -1,6 +1,8 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
-import AppMain from './components/AppMain.vue'
+import AppJumbo from './components/Appjumbo.vue'
+import CardSection from './components/CardSection.vue'
+import FluidSection from './components/FluidSection.vue'
 
 
 export default {
@@ -9,13 +11,17 @@ export default {
     }
   },
 
-  components: {AppHeader, AppMain}
+  components: {AppHeader, AppJumbo, CardSection, FluidSection}
 };
 </script>
 
 <template>
   <AppHeader/>
-  <AppMain />
+  <main>
+    <AppJumbo />
+    <CardSection />
+    <FluidSection />
+  </main>
 </template>
 
 <style lang="scss" scoped></style>

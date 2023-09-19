@@ -1,21 +1,37 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
+import  { heroImgs } from '../data/index';
+
 
 export default {
+
   data() {
     return {
-      title: "Hello world"
+      heroImgs,
+      activeImg: 0,
+
     }
   }
 
-  // components: {
-  //   MyComponent,
-  // },
 };
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
+  <main>
+    <section class="jumbotron-carousel">
+      <div class="slide"
+      v-for="(image, index) in this.heroImgs">
+        <img :src="image" alt="">
+      </div>
+
+    </section>
+  </main>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.jumbotron-carousel {
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>

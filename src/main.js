@@ -1,3 +1,4 @@
+/* Set up using Vue 3 */
 import { createApp } from 'vue'
 import App from './App.vue'
 import './styles/reset.scss'
@@ -7,7 +8,5 @@ import './styles/reset.scss'
 import './styles/import.scss'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
-
-
 
 createApp(App).mount('#app')

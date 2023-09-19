@@ -6,7 +6,7 @@ export default {
 
 <template>
 <nav class="navbar">
-    <a href="#"><img class="logo" src="../assets/img/logo.svg" alt=""></a>
+    <a href="#"><img class="logo" src="public/img/logo.svg" alt=""></a>
     <ul class="navbar nav">
       <li class="nav-item"><a class="nav-link" href="">home</a></li>
       <li class="nav-item"><a class="nav-link" href="">blog</a></li>
@@ -65,7 +65,6 @@ export default {
 
   li>a {
       text-transform: uppercase;
-      font-size: 900;
       color: black;
     }
 

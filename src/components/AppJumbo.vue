@@ -20,7 +20,7 @@ export default {
         <div class="carousel-caption">
           <h6>CINEMATO STUDIO</h6>
           <h2>ACTION AND INSPIRE PEOPLE</h2>
-          <button class="btn btn-primary">calltoaction</button>
+          <button class="call-to-action">READ MORE</button>
         </div>
         <div class="carousel-item">
           <img :src="heroImgs.hero2" class="d-block w-100" alt="..." />
@@ -57,9 +57,27 @@ export default {
 }
 
 .carousel-caption {
+  max-width: 700px;
+  text-align: left;
+  top: 30%;
+  h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 6rem;
+  }
 
-max-width: 700px;
+  h6{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+  }
 
-
+  .call-to-action {
+    background-color: #ffffff;
+    padding: 1rem;
+    border: none;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+  }
 }
 </style>

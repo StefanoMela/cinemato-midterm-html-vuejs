@@ -28,9 +28,9 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  height: 80vh;
   text-align: center;
-  padding-inline: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
 
   .what-we-do__title {
     margin: 5rem 0;
@@ -48,6 +48,7 @@ section {
 
   .what-we-do__cards {
      display: flex;
+     flex-wrap: wrap;
      justify-content: center;
      align-items: center;
      gap: 1.5rem;

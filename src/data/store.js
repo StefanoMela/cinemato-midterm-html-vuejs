@@ -79,24 +79,35 @@ export const store = reactive({
 
     },
 
-    parallax1: [{
-
-        image: '/img/parallax-01.jpg'
-
-    }],
-
-    parallax2: [
+    ourTeam: [
 
         {
-            image: './img/parallax-02.jpg',
-            cst: '158 satisfied customers',
-            prj: '3+ our projects',
-            cc: '1,906 cups of coffee',
-            awards: '2 our awards'
-        }
+            image: './img/Team-01.jpg',
+            title: 'Fabricio Guerra',
+            text: 'Main Director'
+
+        },
+        {
+            image: './img/Team-02.jpg',
+            title: 'Umberto Pagoda',
+            text: 'Main Writer'
+
+        },
+        {
+            image: './img/Team-03.jpg',
+            title: 'Gloria Riccasso',
+            text: 'Main Producer'
+
+        },
+        {
+            image: './img/Team-04.jpg',
+            title: 'Lio Napoin',
+            text: 'Cameraman'
+
+        },
     ],
 
-    parallax3: [
+    customerFeebacks: [
         {
 
             image: './img/parallax-03.jpg',
@@ -125,5 +136,26 @@ export const store = reactive({
             job: 'Designer'
 
         },
-    ]
+    ],
+
+    blogPosts: [
+        {
+            image: './img/blog01.jpg',
+            timeStamp: 'November 06, 2021 by Admin',
+            title: 'RECAP YOUR LATEST COMPANY EVENT',
+            text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
+        },
+        {
+            image: './img/blog02.jpg',
+            timeStamp: 'November 06, 2021 by Admin',
+            title: 'HOW TO EDIT A FILM SCORE TO SERVE',
+            text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
+        },
+        {
+            image: './img/blog03.jpg',
+            timeStamp: 'November 06, 2021 by Admin',
+            title: 'ARE YOU READY TO MAKE IT AWESOME',
+            text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
+        },
+    ],
 });

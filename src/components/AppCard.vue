@@ -21,4 +21,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+.card{
+
+  border: none;
+}
 </style>

@@ -1,8 +1,5 @@
 <script>
 export default {
-  data() {
-    return {};
-  },
 
   props: {
     content: Object,
@@ -13,8 +10,7 @@ export default {
 <template>
   <div class="card">
     <img
-    :src="content.image"
-    class="card-img"/>
+    :src="content.image"/>
     <div class="card-body">
       <h5 class="card-title">{{ content.title }}</h5>
       <p class="card-text">
@@ -25,5 +21,4 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
 </style>

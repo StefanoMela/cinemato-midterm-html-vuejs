@@ -1,18 +1,21 @@
 <script>
-export default {};
+export default {
+
+  props: {
+
+    content: Object
+  }
+
+};
 </script>
 
 <template>
-  <section class="container-fluid about-us" id="about-us">
+  <section class="container-fluid about-us">
     <div class="about-us__text">
-      <h6>ABOUT US</h6>
-      <h2>HIGH QUALITY CINEMATICS</h2>
+      <h6>{{ content.subt }}</h6>
+      <h2>{{ content.title }}</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-        architecto nemo tempora voluptatum adipisci a beatae animi quia
-        perspiciatis voluptatem inventore velit odit placeat est quibusdam, sit
-        explicabo eveniet ex officiis aliquam ab ratione perferendis iste?
-        Itaque dolorum quo eius.
+        {{ content.text }}
       </p>
       <button class="call-to-action">READ MORE</button>
     </div>
@@ -21,16 +24,15 @@ export default {};
 
 <style lang="scss" scoped>
 .about-us {
+  background-size: cover;
   height: 60vh;
 
-  background-image: url("../../public/img/About-Us.jpg");
-  background-size: cover;
-
   display: flex;
+  align-items: center;
   justify-content: flex-end;
+  padding-right: 8rem;
   .about-us__text {
-    max-width: 800px;
-    align-self: center;
+    max-width: 750px;
     color: white;
     padding: 3rem;
     line-height: 2rem;

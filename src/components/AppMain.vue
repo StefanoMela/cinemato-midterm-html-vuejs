@@ -83,18 +83,22 @@ export default {
         <AppCard
           v-for="weDoCard in store.weDoIcons"
           :content="weDoCard"
-          :class="weDoCard.class"
         />
       </div>
     </section>
-    <FluidSection />
+    <FluidSection 
+    :content="store.aboutUs"
+    :style="{backgroundImage: `url(/public/${store.aboutUs.image})`}"
+    />
     <section class="what-we-do">
       <div class="what-we-do__title">
         <h6>YOUR WATCHLIST</h6>
         <h1>BEST HITS MOVIES</h1>
       </div>
       <div class="what-we-do__cards full">
-        <AppCard v-for="weDoFull in store.weDoImages" :content="weDoFull" />
+        <AppCard 
+        v-for="weDoFull in store.weDoImages"
+        :content="weDoFull"/>
       </div>
     </section>
   </main>
@@ -121,13 +125,6 @@ export default {
     letter-spacing: 0.2rem;
   }
 
-  .call-to-action {
-    background-color: #ffffff;
-    padding: 1rem;
-    border: none;
-    letter-spacing: 1.5px;
-    font-weight: bolder;
-  }
 }
 
 // WHAT WE DO ICON SECTION
@@ -157,6 +154,7 @@ export default {
     gap: 1rem;
   }
 
+
   .what-we-do__cards > .card {
     border: none;
     width: calc((100% / 3) - 1rem);
@@ -164,12 +162,6 @@ export default {
     align-items: center;
     gap: 1rem;
   }
-}
-
-.what-we-do__cards.full {
-
-  max-width: 70%;
-  margin: 0 auto;
 }
 
 // WHAT WE DO CARDS SECTION

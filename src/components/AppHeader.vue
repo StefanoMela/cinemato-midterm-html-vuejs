@@ -62,7 +62,7 @@ export default {
 
   margin: 0 auto;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
 
   li>a {
       text-transform: uppercase;

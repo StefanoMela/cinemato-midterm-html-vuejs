@@ -10,11 +10,4 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-section{
-
-  height: 80vh;
-  border: 1px solid black;
-
-
-}
 </style>

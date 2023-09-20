@@ -1,35 +1,29 @@
 <script>
-
 export default {
+  data() {
+    return {};
+  },
 
   props: {
-    weDoIcons: Object
-  }
+    content: Object,
+  },
 };
 </script>
 
 <template>
-
-<div
- v-for="icon in this.weDoIcons"
- class="card">
-  <img :src="icon.icon" class="card-img-top">
-  <div class="card-body">
-    <h5 class="card-title">{{icon.title}}</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pellentuesque ultricies justo tellus</p>
+  <div class="card">
+    <img
+    :src="content.image"
+    class="card-img"/>
+    <div class="card-body">
+      <h5 class="card-title">{{ content.title }}</h5>
+      <p class="card-text">
+        {{ content.text }}
+      </p>
+    </div>
   </div>
-</div>
 </template>
 
 <style lang="scss" scoped>
-.card {
 
-  height: 250px;
-  border: none;
-  max-width: 500px;
-
-  img {
-    max-height: 30%;
-  }
-}
 </style>

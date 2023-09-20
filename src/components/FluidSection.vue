@@ -3,7 +3,7 @@ export default {};
 </script>
 
 <template>
-  <section class="container-fluid about-us">
+  <section class="container-fluid about-us" id="about-us">
     <div class="about-us__text">
       <h6>ABOUT US</h6>
       <h2>HIGH QUALITY CINEMATICS</h2>

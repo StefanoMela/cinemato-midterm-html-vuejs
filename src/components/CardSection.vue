@@ -21,37 +21,11 @@ export default {
       <h1>THIS IS WHAT WE DO</h1>
     </div>
     <div class="what-we-do__cards">
-      <AppCard :weDoIcons="weDoIcons" />
+      <AppCard :weDoIcons="weDoIcons"/>
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
-section {
-  text-align: center;
-  padding: 2rem;
-  margin-bottom: 2rem;
 
-  .what-we-do__title {
-    margin: 5rem 0;
-
-    h6 {
-      letter-spacing: 5px;
-      font-weight: bold;
-    }
-    h1 {
-      margin-top: 2rem;
-      font-weight: bolder;
-      letter-spacing: 6px;
-    }
-  }
-
-  .what-we-do__cards {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
-     gap: 1.5rem;
-   }
-}
 </style>

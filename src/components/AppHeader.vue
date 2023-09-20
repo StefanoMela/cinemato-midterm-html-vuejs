@@ -7,7 +7,7 @@ export default {
 
 <template>
 <nav class="navbar">
-    <a href="#"><img class="logo" src="public/img/logo.svg" alt=""></a>
+    <a href="#"><img class="logo" src="/img/logo.svg" alt=""></a>
     <ul class="navbar nav">
       <li class="nav-item"><a class="nav-link" href="">home</a></li>
       <li class="nav-item"><a class="nav-link" href="">blog</a></li>
@@ -23,7 +23,7 @@ export default {
               <li><a class="dropdown-item" href="#">Video thumbnail type</a></li>
             </ul>
       </li>
-      <li class="nav-item"><a class="nav-link" href="">about</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about-us">about</a></li>
       <li class="nav-item"><a class="nav-link" href="">contact</a></li>
       <li class="nav-item"><a class="nav-link" href="">gallery</a></li>
       <li class="nav-item dropdown">

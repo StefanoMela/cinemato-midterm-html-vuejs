@@ -1,6 +1,5 @@
 <script>
 import { store } from "../data/store";
-import { heroImgs } from "../data/index";
 
 import FluidSection from "./FluidSection.vue";
 import AppCard from "./AppCard.vue";
@@ -9,7 +8,6 @@ export default {
   data() {
     return {
       store,
-      heroImgs,
     };
   },
 
@@ -19,61 +17,6 @@ export default {
 
 <template>
   <main>
-    <section class="jumbotron-carousel">
-      <div class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img :src="heroImgs.hero1" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img :src="heroImgs.hero2" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img :src="heroImgs.hero3" class="d-block w-100" alt="..." />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
     <section class="what-we-do">
       <div class="what-we-do__title">
         <h6>PELICULA STUDIO</h6>
@@ -135,7 +78,7 @@ export default {
           adipisci, eos quam quis ad dolorum saepe? Quasi fuga vero magni ab!
         </p>
         <div class="cst-feedback-wrapper">
-          <img src="/img/01.jpg" alt="" class="cst-img">
+          <img src="/img/01.jpg" alt="" class="cst-img" />
           <div class="cst-info">
             <h6>JOHN DOE</h6>
             <h6>Designer</h6>
@@ -205,26 +148,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.carousel-inner {
-  height: 80vh;
-}
-
-.carousel-caption {
-  max-width: 700px;
-  text-align: left;
-  top: 30%;
-  h2 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 6rem;
-  }
-
-  h6 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-  }
-}
 
 // WHAT WE DO ICON SECTION
 .what-we-do {
@@ -338,10 +261,7 @@ export default {
   justify-content: center;
   align-items: center;
 
-
-
-  .feedback-wrapper{
-
+  .feedback-wrapper {
     max-width: 750px;
     position: relative;
 
@@ -352,10 +272,12 @@ export default {
 
     gap: 1rem;
 
-    p,*{color: white;}
+    p,
+    * {
+      color: white;
+    }
 
-    .quotation-mark{
-
+    .quotation-mark {
       position: absolute;
       z-index: 10;
       translate: 700%;
@@ -364,8 +286,7 @@ export default {
       filter: white;
     }
 
-    .cst-feedback-wrapper{
-
+    .cst-feedback-wrapper {
       align-self: center;
 
       display: flex;
@@ -374,14 +295,10 @@ export default {
       gap: 1rem;
 
       .cst-img {
-        
         border-radius: 50%;
       }
-      
     }
   }
-
-
 }
 
 .form-section {

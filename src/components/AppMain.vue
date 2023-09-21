@@ -13,10 +13,21 @@ export default {
       store,
       feedbackBcg,
       activeImg: 0,
+
+      mainForm: {
+
+        name: '',
+        email: '',
+        mobile: '',
+        pincode: '',
+        message: '',
+
+      }
     };
   },
-
   components: { FluidSection, AppCard },
+
+  emits: ['main-form']
 };
 </script>
 
@@ -120,21 +131,42 @@ export default {
           molestiae velit, harum ex fugiat.
         </p>
       </div>
-      <form class="row g-3">
+      <form @submit.prevent="$emit('main-form')" class="row g-3">
         <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Your Name" />
+          <input
+            v-model="mainForm.name"
+            type="text"
+            class="form-control"
+            placeholder="Your Name"
+          />
         </div>
         <div class="col-md-6">
-          <input type="email" class="form-control" placeholder="Your Email" />
+          <input
+            v-model="mainForm.email"
+            type="email"
+            class="form-control"
+            placeholder="Your Email"
+          />
         </div>
         <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Mobile Number" />
+          <input
+            v-model="mainForm.mobile"
+            type="text"
+            class="form-control"
+            placeholder="Mobile Number"
+          />
         </div>
         <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Your Pincode" />
+          <input
+            v-model="mainForm.pincode"
+            type="password"
+            class="form-control"
+            placeholder="Your Pincode"
+          />
         </div>
         <div class="form-floating col-12">
           <textarea
+            v-model="mainForm.message"
             class="form-control"
             placeholder="Enter your message"
             id="floatingTextarea2"
@@ -153,7 +185,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
 // WHAT WE DO ICON SECTION
 .what-we-do {
   text-align: center;
@@ -203,7 +234,7 @@ export default {
     text-align: center;
 
     display: flex;
-    gap: 20rem;
+    gap: 10rem;
 
     .stat__number {
       font-size: 4rem;
@@ -223,7 +254,7 @@ export default {
 
 .icon-wrapper {
   display: flex;
-  gap: 10rem;
+  gap: 5rem;
 }
 
 // OUR TEAM SECTION

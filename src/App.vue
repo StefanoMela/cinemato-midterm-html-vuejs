@@ -17,13 +17,15 @@ export default {
 
 <template>
   <AppHeader
-  @form-subitm="handleSearch"
+  @form-submit="method"
   />
   <main>
     <AppJumbo />
-    <AppMain />
+    <AppMain 
+    @main-form="method"/>
   </main>
-  <AppFooter />
+  <AppFooter 
+  @mailSubmit="method"/>
 </template>
 
 <style lang="scss" scoped></style>

@@ -5,6 +5,8 @@ export default {
   data() {
     return {
       store,
+
+      mailSubmit: '',
     };
   },
 };
@@ -43,7 +45,10 @@ export default {
       <div class="newsletter">
         <h6>newsletter</h6>
         <p>Subscribe to receive inspiration, ideas & News in your inbox</p>
-        <input type="text" placeholder="Enter your email" required/>
+        <input 
+        @submit.prevent="$emit('footer-form', mailSubmit)"
+        v-model="mailSubmit"
+        type="text" placeholder="Enter your email" required/>
         <button class="call-to-action">Subscribe</button>
       </div>
     </div>
@@ -101,7 +106,6 @@ export default {
     }
 
     .newsletter {
-      max-width: 250px;
 
       display: flex;
       flex-direction: column;
@@ -111,6 +115,7 @@ export default {
         padding: 0.5rem;
         margin: 0.6rem 0;
         background-color: #1b1919;
+        color: #ffffff;
       }
 
       .call-to-action {

@@ -43,7 +43,7 @@ export default {
       <div class="newsletter">
         <h6>newsletter</h6>
         <p>Subscribe to receive inspiration, ideas & News in your inbox</p>
-        <input type="text" placeholder="Enter your email" />
+        <input type="text" placeholder="Enter your email" required/>
         <button class="call-to-action">Subscribe</button>
       </div>
     </div>
@@ -85,7 +85,6 @@ export default {
         gap: 1.5rem;
       }
     }
-
     .information,
     .useful-links {
       list-style-type: none;
@@ -95,6 +94,10 @@ export default {
     a {
       text-decoration: none;
       color: #666666;
+
+      &:hover {
+        color: white;
+      }
     }
 
     .newsletter {

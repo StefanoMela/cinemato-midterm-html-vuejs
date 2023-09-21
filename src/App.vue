@@ -16,7 +16,9 @@ export default {
 </script>
 
 <template>
-  <AppHeader/>
+  <AppHeader
+  @form-subitm="handleSearch"
+  />
   <main>
     <AppJumbo />
     <AppMain />

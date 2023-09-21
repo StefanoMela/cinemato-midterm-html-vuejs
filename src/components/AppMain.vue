@@ -1,6 +1,9 @@
 <script>
 import { store } from "../data/store";
 
+import { feedbackBcg } from '../data/index'
+
+
 import FluidSection from "./FluidSection.vue";
 import AppCard from "./AppCard.vue";
 
@@ -8,6 +11,8 @@ export default {
   data() {
     return {
       store,
+      feedbackBcg,
+      activeImg: 0,
     };
   },
 
@@ -17,7 +22,7 @@ export default {
 
 <template>
   <main>
-    <section class="what-we-do">
+    <section class="what-we-do" id="about-us">
       <div class="what-we-do__title">
         <h6>PELICULA STUDIO</h6>
         <h2>THIS IS WHAT WE DO</h2>
@@ -30,7 +35,7 @@ export default {
       :content="store.aboutUs"
       :style="{ backgroundImage: `url(/public/${store.aboutUs.image})` }"
     />
-    <section class="what-we-do">
+    <section class="what-we-do" id="gallery">
       <div class="what-we-do__title">
         <h6>YOUR WATCHLIST</h6>
         <h2>BEST HITS MOVIES</h2>
@@ -86,7 +91,7 @@ export default {
         </div>
       </div>
     </section>
-    <section class="blog" id="#blog">
+    <section class="blog" id="blog">
       <h6>latest news</h6>
       <h2>articles updated daily</h2>
       <div class="container blog-card">

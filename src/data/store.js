@@ -107,33 +107,32 @@ export const store = reactive({
         },
     ],
 
-    customerFeebacks: [
+    customerFeedbacks: [
         {
 
-            image: './img/parallax-03.jpg',
-            icon: './img/image(20).svg',
+            image: '/img/Parallax-02.jpg',
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure saepe unde fugiat aperiam tenetur! Numquam excepturi voluptate a. Optio aspernatur itaque vel numquam repellendus voluptas sunt officiis enim adipisci recusandae.',
-            pic: './img/01.jpg',
-            name: 'JOHN DOE',
+            icon: '/img/01.jpg',
+            name: 'ELLE DOE',
             job: 'Designer'
 
         },
         {
 
-            icon: './img/image(20).svg',
+            image: '/img/Parallax-01.jpg',
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure saepe unde fugiat aperiam tenetur! Numquam excepturi voluptate a. Optio aspernatur itaque vel numquam repellendus voluptas sunt officiis enim adipisci recusandae.',
-            pic: './img/02.jpg',
-            name: 'JOHN DOE',
-            job: 'Designer'
+            icon: '/img/02.jpg',
+            name: 'MARIA ROSSI',
+            job: 'Web Developer'
 
         },
         {
 
-            icon: './img/image(20).svg',
+            image: '/img/Parallax-03.jpg',
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure saepe unde fugiat aperiam tenetur! Numquam excepturi voluptate a. Optio aspernatur itaque vel numquam repellendus voluptas sunt officiis enim adipisci recusandae.',
-            pic: './img/03.jpg',
-            name: 'JOHN DOE',
-            job: 'Designer'
+            icon: '/img/03.jpg',
+            name: 'Monsieur Lambda',
+            job: 'UX Designer'
 
         },
     ],

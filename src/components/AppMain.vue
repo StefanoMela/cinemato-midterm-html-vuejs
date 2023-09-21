@@ -1,33 +1,30 @@
 <script>
 import { store } from "../data/store";
 
-import { feedbackBcg } from '../data/index'
-
 
 import FluidSection from "./FluidSection.vue";
 import AppCard from "./AppCard.vue";
+import Feedbacks from "./Feedbacks.vue";
 
 export default {
   data() {
     return {
       store,
-      feedbackBcg,
-      activeImg: 0,
 
       mainForm: {
-
-        name: '',
-        email: '',
-        mobile: '',
-        pincode: '',
-        message: '',
-
-      }
+        name: "",
+        email: "",
+        mobile: "",
+        pincode: "",
+        message: "",
+      },
     };
   },
-  components: { FluidSection, AppCard },
+  components: { FluidSection, AppCard, Feedbacks },
 
-  emits: ['main-form']
+  emits: ["main-form"],
+
+
 };
 </script>
 
@@ -82,26 +79,7 @@ export default {
         <AppCard v-for="teamCard in store.ourTeam" :content="teamCard" />
       </div>
     </section>
-    <section class="customer-feedback">
-      <div class="feedback-wrapper">
-        <img src="/img/image(20).svg" alt="" class="quotation-mark" />
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-          impedit earum dolores amet, magnam maxime sit, quidem asperiores
-          adipisci, eos quam quis ad dolorum saepe? Quasi fuga vero magni ab!
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-          impedit earum dolores amet, magnam maxime sit, quidem asperiores
-          adipisci, eos quam quis ad dolorum saepe? Quasi fuga vero magni ab!
-        </p>
-        <div class="cst-feedback-wrapper">
-          <img src="/img/01.jpg" alt="" class="cst-img" />
-          <div class="cst-info">
-            <h6>JOHN DOE</h6>
-            <h6>Designer</h6>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Feedbacks />
     <section class="blog" id="blog">
       <h6>latest news</h6>
       <h2>articles updated daily</h2>
@@ -193,11 +171,11 @@ export default {
 
   .what-we-do__title {
     margin: 5rem 0;
-    font-weight: 700;
 
     h6,
     h2 {
       letter-spacing: 5px;
+      font-weight: 700;
       margin-top: 2rem;
     }
   }
@@ -285,57 +263,6 @@ export default {
   }
 }
 
-// CUSTOMER FEEDBACKS SECTION
-
-.customer-feedback {
-  height: 60vh;
-  background-image: url("/img/Parallax-02.jpg");
-  background-size: cover;
-  background-position: top;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .feedback-wrapper {
-    max-width: 750px;
-    position: relative;
-
-    text-align: justify;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 1rem;
-
-    p,
-    * {
-      color: white;
-    }
-
-    .quotation-mark {
-      position: absolute;
-      z-index: 10;
-      translate: 700%;
-      top: -6rem;
-
-      filter: white;
-    }
-
-    .cst-feedback-wrapper {
-      align-self: center;
-
-      display: flex;
-      align-items: flex-start;
-
-      gap: 1rem;
-
-      .cst-img {
-        border-radius: 50%;
-      }
-    }
-  }
-}
 
 .form-section {
   padding: 3rem;

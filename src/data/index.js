@@ -6,19 +6,5 @@ const heroImgs = [
 ]
 
 
-const feedbackBcg = [
 
-    {
-        image: '/img/Parallax-01.jpg'
-    },
-    {
-        image: '/img/Parallax-02.jpg'
-    },
-    {
-        image: '/img/Parallax-03.jpg'
-    },
-]
-
-
-
-export { heroImgs, feedbackBcg };
+export { heroImgs };

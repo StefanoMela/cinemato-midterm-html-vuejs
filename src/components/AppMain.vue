@@ -123,7 +123,26 @@ export default {
         <AppCard v-for="teamCard in store.ourTeam" :content="teamCard" />
       </div>
     </section>
-    <section class="customer-feedback"></section>
+    <section class="customer-feedback">
+      <div class="feedback-wrapper">
+        <img src="/img/image(20).svg" alt="" class="quotation-mark" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
+          impedit earum dolores amet, magnam maxime sit, quidem asperiores
+          adipisci, eos quam quis ad dolorum saepe? Quasi fuga vero magni ab!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
+          impedit earum dolores amet, magnam maxime sit, quidem asperiores
+          adipisci, eos quam quis ad dolorum saepe? Quasi fuga vero magni ab!
+        </p>
+        <div class="cst-feedback-wrapper">
+          <img src="/img/01.jpg" alt="" class="cst-img">
+          <div class="cst-info">
+            <h6>JOHN DOE</h6>
+            <h6>Designer</h6>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="blog" id="#blog">
       <h6>latest news</h6>
       <h2>articles updated daily</h2>
@@ -155,56 +174,30 @@ export default {
       </div>
       <form class="row g-3">
         <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" />
+          <input type="text" class="form-control" placeholder="Your Name" />
         </div>
         <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword4" />
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Address</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress"
-            placeholder="1234 Main St"
-          />
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Address 2</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress2"
-            placeholder="Apartment, studio, or floor"
-          />
+          <input type="email" class="form-control" placeholder="Your Email" />
         </div>
         <div class="col-md-6">
-          <label for="inputCity" class="form-label">City</label>
-          <input type="text" class="form-control" id="inputCity" />
+          <input type="text" class="form-control" placeholder="Mobile Number" />
         </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">State</label>
-          <select id="inputState" class="form-select">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Pincode" />
         </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="inputZip" />
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck" />
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
+        <div class="form-floating col-12">
+          <textarea
+            class="form-control"
+            placeholder="Enter your message"
+            id="floatingTextarea2"
+            style="height: 300px"
+          ></textarea>
+          <label for="floatingTextarea2" class="form-placeholder"
+            >Enter your message</label
+          >
         </div>
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="form-btn">submit now</button>
         </div>
       </form>
     </section>
@@ -337,7 +330,58 @@ export default {
 
 .customer-feedback {
   height: 60vh;
-  background-color: black;
+  background-image: url("/img/Parallax-02.jpg");
+  background-size: cover;
+  background-position: top;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+  .feedback-wrapper{
+
+    max-width: 750px;
+    position: relative;
+
+    text-align: justify;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+    p,*{color: white;}
+
+    .quotation-mark{
+
+      position: absolute;
+      z-index: 10;
+      translate: 700%;
+      top: -6rem;
+
+      filter: white;
+    }
+
+    .cst-feedback-wrapper{
+
+      align-self: center;
+
+      display: flex;
+      align-items: flex-start;
+
+      gap: 1rem;
+
+      .cst-img {
+        
+        border-radius: 50%;
+      }
+      
+    }
+  }
+
+
 }
 
 .form-section {
@@ -346,6 +390,21 @@ export default {
 
   display: flex;
   gap: 10rem;
+
+  .form-placeholder {
+    margin-left: 0.5rem;
+    color: #666666;
+  }
+
+  .form-btn {
+    width: 100%;
+    padding: 0.3rem;
+    border: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
 
   .collaborate-wrapper {
     max-width: 650px;

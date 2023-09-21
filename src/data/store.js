@@ -158,4 +158,51 @@ export const store = reactive({
             text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
         },
     ],
+
+    infoLinks: [
+        {
+            text: 'Product Support',
+            href: '#'
+        },
+        {
+            text: 'Checkout',
+            href: '#'
+        },
+        {
+            text: 'Report Abuse',
+            href: '#'
+        },
+        {
+            text: 'Redeem Voucher',
+            href: '#'
+        },
+        {
+            text: 'Order Status',
+            href: '#'
+        },
+    ],
+
+    usefuLinks: [
+
+        {
+            text: 'Policies & Rules',
+            href: '#'
+        },
+        {
+            text: 'Privacy Policy',
+            href: '#'
+        },
+        {
+            text: 'License Policy',
+            href: '#'
+        },
+        {
+            text: 'My Account',
+            href: '#'
+        },
+        {
+            text: 'Locality',
+            href: '#'
+        },
+    ],
 });

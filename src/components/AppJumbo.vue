@@ -33,6 +33,7 @@ export default {
         }, 5000);
       }
     },
+
     stopAutoplay() {
       if (this.autoplay) {
         clearInterval(this.autoplay);
@@ -55,6 +56,7 @@ export default {
       </div>
       <div v-for="(image, index) in heroImgs" class="slide">
         <img :src="heroImgs[activeSlide].image" alt="" class="slide-inner" />
+        <div class="overlay"></div>
         <div class="carousel-caption">
           <h6>cinemato studio</h6>
           <h2>action and inspire people</h2>
@@ -75,6 +77,15 @@ export default {
 
   position: relative;
 
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00000017;
+  }
+
   .left-arrow,
   .right-arrow {
     cursor: pointer;
@@ -93,13 +104,11 @@ export default {
   }
 }
 .carousel-caption {
-
-
-  color: white;
+  color: #ffffff;
 
   text-transform: uppercase;
 
-  max-width: 700px;
+  max-width: 60%;
   text-align: left;
   top: 30%;
   h2 {

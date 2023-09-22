@@ -10,7 +10,7 @@ export default {
   },
   
 
-  emits: ['form-subitm'],
+  emits: ['form-submit'],
 
 };
 </script>

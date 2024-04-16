@@ -49,7 +49,7 @@ export default {
 </script>
 
 <template>
-  <div class="jumbo container-fluid">
+  <div class="jumbo container-fluid px-0">
     <div class="slider">
       <div @click="goPrev()" class="left-arrow">
         <img src="/img/left-arrow.svg" alt="" />
@@ -108,7 +108,7 @@ export default {
 
   text-transform: uppercase;
 
-  max-width: 60%;
+  max-width: 50%;
   text-align: left;
   top: 30%;
   h2 {

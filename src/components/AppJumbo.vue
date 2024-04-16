@@ -30,7 +30,7 @@ export default {
       if (!this.autoplay) {
         this.autoplay = setInterval(() => {
           this.goNext();
-        }, 5000);
+        }, 3000);
       }
     },
 
@@ -72,7 +72,7 @@ export default {
 
 <style lang="scss" scoped>
 .slider {
-  height: 90vh;
+  height: 80vh;
   overflow: hidden;
 
   position: relative;

@@ -88,7 +88,6 @@ export default {
 
   .left-arrow,
   .right-arrow {
-  
     cursor: pointer;
 
     position: absolute;
